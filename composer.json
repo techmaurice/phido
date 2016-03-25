@@ -2,7 +2,7 @@
     "name": "techmaurice/phido",
     "description": "PHP library to identify file types",
     "license": "Apache 2.0",
-    "keywords": ["phido", "identify", "xss protection", "csrf protection", "file", "file format", "file type", "identification", "characterisation"],
+    "keywords": ["phido", "identify", "xss protection", "xss", "csrf protection", "csrf", "file", "file format", "file type", "identification", "characterisation"],
     "authors": [
         {
             "name": "Maurice de Rooij",
