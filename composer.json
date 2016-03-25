@@ -1,0 +1,22 @@
+{
+    "name": "TechMaurice/Phido",
+    "description": "PHP library to identify file types",
+    "license": "Apache 2.0",
+    "keywords": ["phido", "file", "file format", "file type", "identification", "characterisation"],
+    "authors": [
+        {
+            "name": "Maurice de Rooij",
+            "email": "mauder+phido@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "TechMaurice\\Phido\\": "src",
+            "TechMaurice\\PhidoConfig\\": "src"
+        }
+    }
+}
