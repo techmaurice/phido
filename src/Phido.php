@@ -196,25 +196,24 @@ class Phido extends PhidoCore {
     		}
       if(!empty($signature["signatures"]) && is_array($signature["signatures"])) {
         foreach($signature["signatures"] as $regex) {
+          if(empty($regex["bofregex"])) {
+            continue;
+            }
+
           $bofResult = 0;
           $varResult = 0;
           $eofResult = 0;
           $matchtypes = Array();
           $score = Array();
 
-          if(empty($regex["bofregex"])) {
-            continue;
-            }
-          else if(!empty($regex["bofregex"])) {
-            array_push($matchtypes, "bof");
-            $bofResult = preg_match('/' . $regex["bofregex"] . '/ms', $bofChunk, $matches);
-            if($bofResult == 1) {
-              array_push($score, "bof");
-              }
-            else {
-              continue;
-              }
-            }
+					array_push($matchtypes, "bof");
+					$bofResult = preg_match('/' . $regex["bofregex"] . '/ms', $bofChunk, $matches);
+					if($bofResult == 1) {
+						array_push($score, "bof");
+						}
+					else {
+						continue;
+						}
 
           if(!empty($regex["varregex"])) {
             rewind($this->fileHandle);

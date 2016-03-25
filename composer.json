@@ -1,5 +1,5 @@
 {
-    "name": "TechMaurice/Phido",
+    "name": "techmaurice/phido",
     "description": "PHP library to identify file types",
     "license": "Apache 2.0",
     "keywords": ["phido", "file", "file format", "file type", "identification", "characterisation"],
