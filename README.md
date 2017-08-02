@@ -2,6 +2,8 @@ PHIDO
 ----
 PHP library to analyse file format types
 ---
+(C) 2017 Maurice de Rooij
+---
 
 Installation
 --
@@ -12,4 +14,4 @@ Git: `git clone https://github.com/techmaurice/phido.git`
 
 Usage
 --
-See <example-composer.php> or <example-vanilla.php>
+See <https://github.com/techmaurice/phido/blob/master/example-composer.php> or <https://github.com/techmaurice/phido/blob/master/example-vanilla.php>
